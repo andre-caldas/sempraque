@@ -3,6 +3,7 @@ title: "Sem Pra Quê: point-free topology"
 #paginate: 5  # Use pagination.pagerSize instead.
 theme: "PaperMod"
 
+enableGitInfo: true
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
@@ -93,7 +94,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/andrecaldas/sempraque/content"
+    URL: "https://github.com/andre-caldas/sempraque/blob/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
@@ -110,18 +111,22 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
+    - identifier: home
+      name: home
+      url: /
+      weight: 5
     - identifier: about
-      name: About
+      name: about
       url: /about/
-      weight: 10
+      weight: 100
 #    - identifier: categories
 #      name: categories
 #      url: /categories/
 #      weight: 10
-#    - identifier: tags
-#      name: tags
-#      url: /tags/
-#      weight: 20
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
 #    - identifier: example
 #      name: example.org
 #      url: https://example.org
