@@ -7,8 +7,8 @@ draft: false
 An amazing friend is egging me on to study *point-free topology*.
 Some call it *"pointless" topology*.
 Of course, it is a ready-made joke and I couldn't help doing like everyone else.
-Therefore, the blog is called *"sem pra quê"*
-(without a "what for" in a somewhat literal translation).
+Therefore, the blog is called *"sem pra quê"*...
+"without a 'what for'" (without a purpose) in a literal translation.
 
 My name is André Caldas.
 I am a math professor at
