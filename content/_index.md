@@ -7,5 +7,5 @@ params:
 Sem Pra Quê
 ===========
 
-Aqui vou escrevendo minhas considerações sobre *point-free topology*.
-Ainda estou engatinhando...
+Aprendendo *point-free topology*.
+Aqui vou escrevendo minhas considerações...
