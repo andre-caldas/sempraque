@@ -23,7 +23,8 @@ but we do not really care for its value, as long as it is *"big enough"* (strict
 When we say $\forall \varepsilon > 0$, we are saying:
 > no matter **how small** it may be, if it is **big enough**.
 
-A *neighbourhood* of a point $x$, $\mathcal{V}(x)$, is a set that is *big enough* to contain a ball centered at $x$.
+Denote by $\mathcal{V}(x)$ the *neighbouhoods* of a point $x \in X$.
+A *neighbourhood* of $x$ is a set that is *big enough* to contain a ball centered at $x$.
 An *open set* is a set that is a *neighbourhood* of all its points.
 What makes *open sets* really useful in this context is the fact that by knowing the *open sets*,
 it is possible to reconstruct the *neighbourhoods* of any point.
