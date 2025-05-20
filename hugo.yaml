@@ -4,6 +4,7 @@ title: "Sem Pra Quê: point-free topology"
 theme: "PaperMod"
 
 enableGitInfo: true
+enableEmoji: true
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
@@ -109,24 +110,29 @@ params:
     minMatchCharLength: 0
     limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys: ["title", "permalink", "summary", "content"]
+
+taxonomies:
+  category: 'categories'
+  tag: 'tags'
+
 menu:
   main:
-    - identifier: home
-      name: home
-      url: /
+    - identifier: posts
+      name: posts
+      url: /posts/
       weight: 5
-    - identifier: about
-      name: about
-      url: /about/
-      weight: 100
-#    - identifier: categories
-#      name: categories
-#      url: /categories/
-#      weight: 10
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
     - identifier: tags
       name: tags
       url: /tags/
       weight: 20
+    - identifier: about
+      name: about
+      url: /about/
+      weight: 100
 #    - identifier: example
 #      name: example.org
 #      url: https://example.org
@@ -143,3 +149,7 @@ markup:
     # lineNos: true
     # style: monokai
 
+  goldmark:
+    renderHooks:
+      link:
+        enableDefault: true

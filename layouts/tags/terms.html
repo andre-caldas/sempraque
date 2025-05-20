@@ -1,0 +1,45 @@
+{{/* This was copied from themes/PaperMod/layout/_default/.              */}}
+{{/* Whenever the theme is updated, this file should be updated as well. */}}
+{{/* TODO: make links /tag/<category>/ work as well. */}}
+
+{{- define "main" }}
+
+{{ $categories := .Site.Taxonomies.categories }}
+{{ $tags := .Site.Taxonomies.tags }}
+{{ $all := merge $tags $categories }}
+
+{{- if .Title }}
+<header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- if .Description }}
+    <div class="post-description">
+        {{ .Description }}
+    </div>
+    {{- end }}
+</header>
+{{- end }}
+
+{{- range $name, $pages := $categories }}
+  {{ if (index $tags $name) }}
+    <div style="color: red; font-weight: bold;">
+      ⚠ Warning: '{{ $name }}' is defined as both a tag and a category.
+    </div>
+  {{ end }}
+{{- end }}
+
+<ul class="terms-tags">
+  {{- range $name, $pages := $all }}
+    {{- $type := "tags" }}
+    {{ if (index $categories $name) }}
+      {{- $type = "categories" }}
+    {{ end }}
+    {{- $count := len $pages }}
+    {{- with site.GetPage (printf "/%s/%s" $type $name) }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Name }} <sup><strong><sup>{{ $count }}</sup></strong></sup> </a>
+      </li>
+    {{- end }}
+  {{- end }}
+</ul>
+
+{{- end }}{{/* end main */ -}}
