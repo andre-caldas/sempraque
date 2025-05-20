@@ -75,7 +75,9 @@ We do not even talk about $X$!!! Only the open sets exist... and they are not se
 They are *elements* in a *poset* $\tau$. :smile:
 
 The *empty element*, it is not "empty" because there is nothing inside it.
-It is the *smallest* element in the *poset*.
+We are not talking about sets :sunglasses:...
+In terms of the order in the *poset*,
+the *empty element* is simply the *smallest* element.
 Some like to call it $0$.
 The same way,
 the "whole space" $X$ is not the *set of points*.
