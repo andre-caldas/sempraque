@@ -3,6 +3,7 @@ SITENAME = 'Sem Pra Quê'
 SITEURL = "" # Ovewritten by publishconf.py
 
 THEME = "themes/pelican-themes/Peli-Kiera"
+THEME_TEMPLATES_OVERRIDES = ["templates/"]
 PATH = "content"
 TIMEZONE = 'America/Sao_Paulo'
 DEFAULT_LANG = 'en'
