@@ -1,13 +1,18 @@
 ---
 title: 'Basic Idea (part 01)'
 date: 2025-05-19T08:45:05-03:00
-draft: false
 categories:
   - point-free
   - topology
 tags:
-  - poset
   - basic idea
+  - poset
+  - lattice
+description: >
+  What is the basic idea behind point-free topology?
+  In this first post,
+  I talk about the structure that is studied instead of the usual
+  set of points and family of open sets: a complete lattice.
 ---
 
 As the name suggests,
@@ -80,7 +85,7 @@ In terms of the order in the *poset*,
 the *empty element* is simply the *smallest* element.
 Some like to call it $0$.
 The same way,
-the "whole space" $X$ is not the *set of points*.
+the "whole space" $X$ is not a *set of points*.
 It is simply the greatest element in the *poset*.
 We can call it $1$.
 
@@ -90,7 +95,7 @@ $$A = \bigcup \mathscr{A}.$$
 But since we are not talking about sets :sunglasses:...
 it is the *supremum* of $\mathscr{A}$:
 the smallest *element* that *follows*
-(come after) every *element* in $\mathscr{A}$.
+(comes after) every *element* in $\mathscr{A}$.
 We do not call it union, though.
 We call it the *join* or the *supremum* of elements in $\mathscr{A}$, and write
 $$A = \bigvee \mathscr{A}.$$

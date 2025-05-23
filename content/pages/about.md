@@ -1,10 +1,10 @@
 ---
-title: 'About'
-date: 2025-05-18T18:34:16-03:00
-draft: false
+layout: page
+title: About
+permalink: /about/
 ---
 
-An amazing friend is egging me on to study *point-free topology*.
+An amazing friend of mine is egging me on to study *point-free topology*.
 Some call it *“pointless”* topology.
 Of course, that's a ready-made joke, and I couldn’t help but follow suit.
 So, the blog is called *“sem pra quê”* — literally, “without a what for”.
