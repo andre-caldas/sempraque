@@ -3,7 +3,8 @@ SITENAME = 'Sem Pra Quê'
 SITEURL = "" # Ovewritten by publishconf.py
 
 THEME = "themes/pelican-themes/Peli-Kiera"
-THEME_TEMPLATES_OVERRIDES = ["templates/"]
+#THEME = "themes/pelican-themes/cebong"
+THEME_TEMPLATES_OVERRIDES = [f"templates/{THEME}", "templates/"]
 PATH = "content"
 STATIC_PATHS = [""]
 TIMEZONE = 'America/Sao_Paulo'
@@ -19,16 +20,14 @@ AUTHOR_FEED_RSS = None
 # Blogroll
 LINKS = (
     ("Pelican", "https://getpelican.com/"),
-    ("Python.org", "https://www.python.org/"),
     ("Jinja2", "https://palletsprojects.com/p/jinja/"),
-    ("You can modify those links in your config file", "#"),
 )
 
 # Social widget
-SOCIAL = (
-    ("You can add links in your config file", "#"),
-    ("Another social link", "#"),
-)
+#SOCIAL = (
+#    ("You can add links in your config file", "#"),
+#    ("Another social link", "#"),
+#)
 
 DEFAULT_PAGINATION = 10
 
