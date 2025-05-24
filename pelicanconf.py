@@ -5,6 +5,7 @@ SITEURL = "" # Ovewritten by publishconf.py
 THEME = "themes/pelican-themes/Peli-Kiera"
 THEME_TEMPLATES_OVERRIDES = ["templates/"]
 PATH = "content"
+STATIC_PATHS = [""]
 TIMEZONE = 'America/Sao_Paulo'
 DEFAULT_LANG = 'en'
 
