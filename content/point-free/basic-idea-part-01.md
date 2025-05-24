@@ -1,18 +1,12 @@
 ---
-title: 'Basic Idea (part 01)'
+title: Basic Idea (part 01)
 date: 2025-05-19T08:45:05-03:00
-categories:
-  - point-free
-  - topology
-tags:
-  - basic idea
-  - poset
-  - lattice
-description: >
-  What is the basic idea behind point-free topology?
-  In this first post,
-  I talk about the structure that is studied instead of the usual
-  set of points and family of open sets: a complete lattice.
+category: point-free topology
+tags: basic idea, poset, lattice
+summary: What is the basic idea behind point-free topology?
+         In this first post,
+         I talk about the structure that is studied instead of the usual
+         set of points and family of open sets: a complete lattice.
 ---
 
 As the name suggests,
@@ -143,6 +137,7 @@ it is called a
 
 Except for *arbitrary meets*,
 our *lattice* structure directly translates:
+
 | point set      | point-free       |
 |----------------|------------------|
 | $\subset$      | $\prec$          |
@@ -180,6 +175,7 @@ This *infimum* is **not** the *minimum*.
 
 Well, I do not know much about the subject, yet.
 But I will try to stick with the following standard:
+
 1. Use *meet* or *join* for a few elements: $a \wedge b$ and $a \vee b$.
 2. Use *infimum* and *supremum* for a family: $\bigwedge \mathscr{A}$ or $\bigvee \mathscr{A}$.
 3. Words like *bigger* and *smaller* mean "or equal", just like the symbol $\prec$.
@@ -227,12 +223,14 @@ Instead of saying we are forbidden to talk about *points*,
 we talk about a *complete lattice* that might be or not *isomorphic* to the topology of a topological space $X$.
 
 Given a set $X$ and a *complete lattice* $L$:
+
 1. Can we construct a topology $\tau$ over $X$ such that $\tau$ is *(lattice-)isomorphic* to $L$?
 2. Is this $\tau$ unique?
 3. What if we do not have $X$... only $L$? Can we find an $X$? Will it be unique?
 
 Let $\tau$ be a topology in $X$ and $\gamma$ a topology in $Y$.
 Given a $\tilde{f}: \gamma \rightarrow \tau$:
+
 1. Can we construct a continuous $f: X \rightarrow Y$ such that $\tilde{f} = f^{-1}|_{\gamma}$?
 2. Is it unique?
 
