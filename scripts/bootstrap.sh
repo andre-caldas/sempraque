@@ -1,0 +1,6 @@
+#!/bin/bash
+
+MY_DIR="$(dirname "$0")"
+
+"$MY_DIR/install_fonts.sh"
+pelican content -s publishconf.py
