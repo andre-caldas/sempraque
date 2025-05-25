@@ -31,5 +31,11 @@ LINKS = (
 
 DEFAULT_PAGINATION = 10
 
-# Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+MARKDOWN = {
+    'extensions': ['markdown_include.include'],
+    'extension_configs': {
+        'markdown_include.include': {
+            'base_path': 'markdown_includes',  # where disclaimer.md lives
+        }
+    }
+}

@@ -245,6 +245,4 @@ but the family $\\{(0, 1/n)\\}$ generates a (non-principal!) filter strictly lar
 How do you distinguish them only looking at the lattice?
 
 Those questions are answered in the first chapter of this book:
-> Jorge Picado &amp; Aleš Pultr. *Frames and Locales: topology without points*.
-> Springer Basel, Series Frontiers in Mathematics, Vol. 28, xx + 400 pp., 2012
-> (ISBN: 978-3-0348-0153-9).
+{!citation/picado_point_free.md!}
