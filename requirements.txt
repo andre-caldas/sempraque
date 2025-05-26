@@ -1,4 +1,15 @@
 pelican
 markdown
+
+#
+# Markdown extensions.
+#
+
+# Include other markdown files.
 markdown-include
+
+# Many useful extensions.
 pymdown-extensions
+
+# Make things typographically nice.
+typogrify

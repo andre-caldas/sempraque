@@ -31,7 +31,14 @@ LINKS = (
 
 DEFAULT_PAGINATION = 10
 
+
+#
+# Markdown improvements
+#
 import pymdownx.emoji
+
+TYPOGRIFY = True
+TYPOGRIFY_DASHES = 'oldschool'
 
 MARKDOWN = {
     'extensions': [
