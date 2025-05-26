@@ -66,13 +66,13 @@ Given a point $x$, in a topological space,
 there is the *filter of [neighbourhoods][] of $x$*:
 $\mathcal{V}(x)$.
 Let's denote by $\tau(x)$ the *open neighbourhoods* of $x$.
-In the set theoretical setup, $\tau(x)$ is not a [filter][setfilter].
+In family $\tau(x)$ is not a [filter in the lattice of subsets of $X$][setfilter].
 When we consider $\tau$ as a lattice, however,
-$\tau(x) \subset \tau$ is, in fact,
-a [filter][latticefilter].
+$\tau(x)$ is a [filter][latticefilter] in $\tau$.
 Let's call it an *open filter*,
-to remind us that we are treating it aa *filter* in $\tau$,
-and **not** as filter of subsets of $X$.
+to remind us that we are treating it as a *filter* in $\tau$,
+and **not** as filter in $\mathscr{P}(X)$
+--- the family of subsets of $X$.
 
 [neighbourhoods]: https://en.wikipedia.org/wiki/Neighbourhood_system "Neighbourhood filter"
 [setfilter]: https://en.wikipedia.org/wiki/Filter_(set_theory) "Filter of subsets"
@@ -92,7 +92,7 @@ if we only knew what **point** we are talking about! :scream:
 
 Pick up a
 [filter][latticefilter]
-in the lattice.
+in the lattice $\tau$.
 Is it possible that this filter
 corresponds to the family $\tau(x)$ of open neighbourhoods of a point $x$?
 What criteria could we use to distinguish filters that might or not correspond
@@ -158,7 +158,7 @@ it has to belong to one of the sets in the union:
 \begin{equation}
   x \in \bigcup \mathscr{A}
   \Rightarrow
-  \exists A \in \mathscr{A}\,\ x \in A.
+  \exists A \in \mathscr{A},\,\ x \in A.
 \end{equation}
 
 In terms of $\tau(x)$,
@@ -168,7 +168,7 @@ this means that if we are only dealing with open sets
 \begin{equation}
   \bigcup \mathscr{A} \in \tau(x)
   \Rightarrow
-  \exists A \in \mathscr{A}\,\ A \in \tau(x).
+  \exists A \in \mathscr{A},\,\ A \in \tau(x).
 \end{equation}
 
 So, if $L(\tau)$ is a lattice isomorphic to $\tau$,
@@ -179,16 +179,16 @@ it needs to satisfy
 \begin{equation}
   \bigvee \mathscr{A} \in \mathscr{F}
   \Rightarrow
-  \exists A \in \mathscr{A}\,\ A \in \mathscr{F}.
+  \exists A \in \mathscr{A},\,\ A \in \mathscr{F}.
 \end{equation}
 
 When $\mathscr{F}$ has the above property,
 we say it is a
 [completely prime filter](https://ncatlab.org/nlab/show/completely%20prime%20filter).
-If the implication is falid for *finitary filters*,
+If the implication is known to be valid only for *finitary filters*,
 we say that $\mathscr{F}$ is a *prime filter*.
 
-The *completely prime filters* are the candidates to being "*neighbourhood of some point*".
+The *completely prime filters* are the candidates for being "*neighbourhood of some point*".
 When a topological space $(X, \tau)$ is such that
 every *completely prime filter* in $\tau$ is of the form $\tau(x)$ for some $x \in X$,
 we call it *sober*.
