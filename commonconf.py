@@ -4,7 +4,7 @@ SITEURL = "" # Ovewritten by publishconf.py
 
 THEME = "themes/pelican-themes/Peli-Kiera"
 #THEME = "themes/pelican-themes/cebong"
-THEME_TEMPLATES_OVERRIDES = ["templates/", f"templates/{THEME}"]
+THEME_TEMPLATES_OVERRIDES = [f"templates/{THEME}", "templates/",]
 PATH = "content"
 STATIC_PATHS = [""]
 TIMEZONE = 'America/Sao_Paulo'
@@ -31,11 +31,28 @@ LINKS = (
 
 DEFAULT_PAGINATION = 10
 
+import pymdownx.emoji
+
 MARKDOWN = {
-    'extensions': ['markdown_include.include'],
+    'extensions': [
+        'markdown_include.include',
+        'pymdownx.arithmatex',
+        'pymdownx.emoji',
+        'pymdownx.betterem',
+        'pymdownx.extra',
+    ],
     'extension_configs': {
         'markdown_include.include': {
-            'base_path': 'markdown_includes',  # where disclaimer.md lives
-        }
+            'base_path': 'markdown_includes',
+        },
+        'pymdownx.arithmatex': {
+            'generic': False,
+            'preview': False,
+            'block_syntax': ['begin',],
+        },
+        'pymdownx.emoji': {
+            'emoji_generator': pymdownx.emoji.to_alt,
+        },
     }
 }
+

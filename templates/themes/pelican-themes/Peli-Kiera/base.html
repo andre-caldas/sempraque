@@ -21,6 +21,8 @@
                     {% if FEED_ALL_RSS_URL %}{{ FEED_ALL_RSS_URL }}{% else %}{{ FEED_ALL_RSS }}{% endif %}"
                   type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed"/>
         {% endif %}
+	{% include "parts/mathjax.html" %}
+	{% include "parts/favicon.html" %}
     {% endblock head %}
 </head>
 <body>
@@ -79,7 +81,6 @@
         </h6>
     </footer>
 </div>
-{% include 'analytics.html' %}
 </body>
 </html>
 

@@ -1,5 +1,5 @@
 ---
-title: Basic Idea (part 01)
+title: Basic Idea: the name of the game
 date: 2025-05-19T08:45:05-03:00
 category: point-free topology
 tags: basic idea, poset, lattice
@@ -51,7 +51,11 @@ or that $A$ is contained in $B$,
 or that $B$ contains $A$.
 Those will not be treated as sets... they do not have things that belong to them.
 We shall say that $A$ precedes $B$, and denote it by
-$$A \prec B.$$
+
+\begin{equation}
+  A \prec B.
+\end{equation}
+
 We wear those blinders and,
 from the *family of open sets*, all we see is a
 [partially ordered set](https://en.wikipedia.org/wiki/Partially_ordered_set).
@@ -85,14 +89,22 @@ We can call it $1$.
 
 We do talk about the union.
 If $\mathscr{A}$ is a family of open sets, their union is also an open set:
-$$A = \bigcup \mathscr{A}.$$
+
+\begin{equation}
+  A = \bigcup \mathscr{A}.
+\end{equation}
+
 But since we are not talking about sets :sunglasses:...
 it is the *supremum* of $\mathscr{A}$:
 the smallest *element* that *follows*
 (comes after) every *element* in $\mathscr{A}$.
 We do not call it union, though.
 We call it the *join* or the *supremum* of elements in $\mathscr{A}$, and write
-$$A = \bigvee \mathscr{A}.$$
+
+\begin{equation}
+  A = \bigvee \mathscr{A}.
+\end{equation}
+
 The axiom (in general topology) that states that an arbitrary union of open sets is open
 translates to the fact that the *supremum* always exists in the *poset* $\tau$.
 
@@ -107,7 +119,11 @@ since finite intersections of open sets are open,
 finite intersections of *elements* $A_1, \dotsc, A_n$
 will correspond to the *greatest element* that *precedes* all those $A_j$.
 We will call it the *infimum* or the *meet* and denote it by
-$$A_1 \wedge \dotsb \wedge A_n.$$
+
+\begin{equation}
+  A_1 \wedge \dotsb \wedge A_n.
+\end{equation}
+
 Again, not every *poset* is such that $a \wedge b$ is defined.
 However, in a topology $\tau$, since $\tau$ is closed by finite intersections,
 the *finite meet* is defined.
@@ -118,16 +134,25 @@ And finally,
 although the arbitrary intersection of a family $\mathscr{A}$ of open sets might not be open,
 we can still talk about the *infimum* of those *elements*.
 Let
-$$\mathscr{B} = \\{U \in \tau :\\, \forall A \in \mathscr{A},\\, U \prec A\\}$$
+
+\begin{equation}
+  \mathscr{B} = \{U \in \tau :\, \forall A \in \mathscr{A},\, U \prec A\}
+\end{equation}
+
 be the *elements* that precede every member of $\mathscr{A}$.
 The family $\mathscr{B}$ is not empty,
 because $\emptyset$ is the *smallest element*.
 The *infimum* of $\mathscr{A}$ is simply the *supremum* of $\mathscr{B}$:
-$$\bigwedge \mathscr{A} = \bigvee \mathscr{B}.$$
+\begin{equation}
+  \bigwedge \mathscr{A} = \bigvee \mathscr{B}.
+\end{equation}
 In the case of *point set topology*
 --- if we were talking about points... :sunglasses: ---
 the *arbitrary meet* is the interior of the *intersection*:
-$$\bigwedge \mathscr{A} = \mathrm{int}\left(\bigcap \mathscr{A}\right).$$
+
+\begin{equation}
+  \bigwedge \mathscr{A} = \mathrm{int}\left(\bigcap \mathscr{A}\right).
+\end{equation}
 
 A *poset* with *finite meets* and *finite joins* is called a
 [lattice](https://en.wikipedia.org/wiki/Lattice_(order)).
@@ -190,7 +215,7 @@ When studying *topological spaces* one soon demonstrates:
 > an arbitrary intersection of topological spaces over $X$ is a topological space.
 
 This allow you to have, *infimum* and *supremum* in the family of all topological spaces over $X$.
-The *smallest element* is the *caotic topology*: $\\{\emptyset, X\\}$.
+The *smallest element* is the *caotic topology*: $\{\emptyset, X\}$.
 The *greatest element* is the *discrete topology*: $\mathcal{P}(X)$.
 The *infimum* is just the *intersection*: the open sets that are common to all those topologies.
 And the *supremum* can be realized as the *infimum* among all those that are *bigger*.
@@ -240,8 +265,8 @@ A related question...
 > in a some topological space whose topology is isomorphic to $L$?
 
 In ["Be careful!"](#careful), we saw that this is not as easy if you have the *lattice* $L$ but not the sets.
-For example, the family $\\{(-1/n, 1/n)\\}$ generates $\mathcal{V}(0)$ in $\mathbb{R}$,
-but the family $\\{(0, 1/n)\\}$ generates a (non-principal!) filter strictly larger than $\mathcal{V}(0)$.
+For example, the family $\{(-1/n, 1/n)\}$ generates $\mathcal{V}(0)$ in $\mathbb{R}$,
+but the family $\{(0, 1/n)\}$ generates a (non-principal!) filter strictly larger than $\mathcal{V}(0)$.
 How do you distinguish them only looking at the lattice?
 
 Those questions are answered in the first chapter of this book:
