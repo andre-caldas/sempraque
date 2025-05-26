@@ -1,6 +1,6 @@
 ---
 title: Basic Idea: the name of the game
-date: 2025-05-19T08:45:05-03:00
+date: 2025-05-19
 category: point-free topology
 tags: basic idea, poset, lattice
 summary: What is the basic idea behind point-free topology?
@@ -18,7 +18,7 @@ The study of *general topology* already enables us to talk about being *close* o
 without the need of a *distance* (also called a *metric*).
 After all,
 when using a *metric*, we do talk about taking an arbitrary $\varepsilon > 0$,
-but we do not really care for its value, as long as it is *"big enough"* (strictly greater than $0$).
+but we do not really care for its value, as long as it is "*big enough*" (strictly greater than $0$).
 When we say $\forall \varepsilon > 0$, we are saying:
 > no matter **how small** it may be, if it is **big enough**.
 
@@ -271,3 +271,7 @@ How do you distinguish them only looking at the lattice?
 
 Those questions are answered in the first chapter of this book:
 {!citation/picado_point_free.md!}
+
+---
+Continues...
+[next post]({filename}basic-idea-part-02.md).
