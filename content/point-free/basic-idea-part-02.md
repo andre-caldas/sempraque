@@ -28,10 +28,10 @@ There is nothing to brag about... :astonished:
 
 Now,
 suppose you want to prove a certain theorem.
-You used the whole *point-free* thingy and conclude
+You used the whole *point-free* thingy and concluded
 that the "point-free version" of the topological space you are looking for does actually exist.
 That is, all you have is a *complete lattice* $\tau$...
-**as long** as you can manage to find out (construct, maybe)
+and **as long** as you can manage to find out (construct, maybe)
 a topological space whose family of open sets is
 isomorphic to $\tau$
 **as a _complete lattice_**, you are done!
@@ -55,7 +55,7 @@ is kind of...<br/>
 
 We shall investigate what properties a topological space needs to have
 so we can recover a point set topology
-from the complete lattice given by its open sets.
+from the complete lattice of its open sets.
 
 So, we are looking at the open sets of a topology.
 But we are using those blinders... :see_no_evil:
@@ -65,7 +65,7 @@ And we do not see points...
 Given a point $x$, in a topological space,
 there is the *filter of [neighbourhoods][] of $x$*:
 $\mathcal{V}(x)$.
-Let's denote by $\tau(x)$ the *open neighbourhoods$ of $x$.
+Let's denote by $\tau(x)$ the *open neighbourhoods* of $x$.
 In the set theoretical setup, $\tau(x)$ is not a [filter][setfilter].
 When we consider $\tau$ as a lattice, however,
 $\tau(x) \subset \tau$ is, in fact,
