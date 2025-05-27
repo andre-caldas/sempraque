@@ -40,7 +40,7 @@ But, how do you do that? :sweat_smile:
 
 
 Back to the Points :cloud_with_lightning::church::zap::red_car:
------------------------------------------
+---------------------------------------------------------------
 
 Take for example,
 any nonempty set $X$ with the chaotic topology $\tau = \{\emptyset, X\}$.
@@ -131,7 +131,7 @@ $\mathscr{F}$ and $\mathscr{G}$
 just by taking *meets*. :cold_sweat:
 
 
-### The trick :sunglasses:
+### The trick :sunglasses:  {#trick}
 
 In one hand,
 in $\tau$,
