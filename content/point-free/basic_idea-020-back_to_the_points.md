@@ -21,7 +21,7 @@ what we do is to
 [forget](https://en.wikipedia.org/wiki/Forgetful_functor)
 everything except the complete lattice structure we talked so much about
 on the
-[previous post]({filename}basic-idea-part-01.md).
+[previous post]({filename}basic_idea-010-name_of_the_game.md).
 
 Forgetting is easy!
 There is nothing to brag about... :astonished:
