@@ -274,4 +274,4 @@ Those questions are answered in the first chapter of this book:
 
 ---
 Continues...
-[next post]({filename}basic-idea-part-02.md).
+[next post]({filename}basic_idea-020-back_to_the_points.md).

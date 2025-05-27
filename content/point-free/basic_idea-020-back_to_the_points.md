@@ -10,7 +10,7 @@ summary: Given the complete lattice corresponding to a topology...
 ---
 
 This is the continuation of
-[this previous post]({filename}basic-idea-part-01.md).
+[this previous post]({filename}basic_idea-010-name_of_the_game.md).
 
 ---
 
@@ -39,7 +39,7 @@ isomorphic to $\tau$
 But, how do you do that? :sweat_smile:
 
 
-Back to the Points :church::zap::red_car:
+Back to the Points :cloud_with_lightning::church::zap::red_car:
 -----------------------------------------
 
 Take for example,
@@ -150,7 +150,7 @@ it might happen that
 
 On the other hand,
 the *supremum* is exactly the same thing as the *union*!!!
-:tada::confetti_ball::tada::confetti_ball:
+:tada: :confetti_ball: :tada: :confetti_ball:
 
 And one thing we know about the union is that if $x$ belongs to the union,
 it has to belong to one of the sets in the union:
