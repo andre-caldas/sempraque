@@ -230,23 +230,29 @@ we have:
   \\
   \tag{💪💪}
   \left({\bigwedge}^c \mathscr{F}^c\right)^c
-  &\subset
+  &\succ
   \left({\bigwedge}^c \mathscr{C}_{\mathscr{F}}\right)^c.
 \end{align}
 
 But those are lots of ${}^c$...
+... and also, if we are not talking about sets, there is no inclusion ($\subset$)!
 
-\begin{align}
-  \tag{💪}
-  \bigwedge \mathscr{F}
-  &\subset
-  \left({\bigwedge}^c \mathscr{C}_{\mathscr{F}}\right)^c
-  \\
+> **Remember:**
+> Those are not sets. They are just *elements* in a lattice.
+> And ${\cdot}^c$ is attached to an *element* just to remind us that we are
+> reversing the order and treating the *elements* as *closed sets*, instead of *open*.
+
+So, getting rid of everything that depends on *sets*...
+
+\begin{equation}
   \tag{💪💪}
-  \bigvee \mathscr{F}^c
-  &\supset
-  \bigvee \mathscr{C}_{\mathscr{F}}.
-\end{align}
+  \bigvee \mathscr{C}_{\mathscr{F}}
+  \prec
+  \bigvee \mathscr{F}^c.
+\end{equation}
+
+The left side representing the intersection of every *closed neighbourhood* of the point,
+and the right side representing the intersection of every *closed set* that contains the point.
 
 
 > **Exercise:**
