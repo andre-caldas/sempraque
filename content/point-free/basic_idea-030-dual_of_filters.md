@@ -1,6 +1,6 @@
 ---
 title: Basic Idea: the dual of filters
-date: 2025-05-29
+date: 2025-05-30
 category: point-free topology
 tags: basic idea, filter, closed sets, dual order, ideal
 summary: About ideals: the dual of filters.
@@ -53,7 +53,7 @@ Specially if you are not talking about sets!
 But... what is the "complement" of an *element*, then? :shrug:
 
 > **Attention:**
-> if all we have is a *complete lattice*,
+> If all we have is a *complete lattice*,
 > we do not really know what the *closed sets* are!
 > Because we are not talking about sets.
 > We are simply representing *closed elements* using the *order dual lattice*:
