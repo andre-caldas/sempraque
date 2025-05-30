@@ -59,13 +59,31 @@ But... what is the "complement" of an *element*, then? :shrug:
 > We are simply representing *closed elements* using the *order dual lattice*:
 > the same elements, but with reverse order.
 > For an element $a$ in the *complete lattice*,
-> we may even use the symbol $a^c$ to talk about the corresponding element in the *dual lattice*.
-> In this case, for example, $a^c \vee b^c = (a \wedge b)^c$.
-> But we can also, stick with the same *elements*
-> and talk about the *open order* and the *closed order*,
-> the *open meet* and the *closed meet*, etc.
-> This way, we do not need to keep coming back and forth from one lattice to the other.
-> Something like $a \vee^c b = a \wedge b$.
+> we could even use the symbol $a^c$ to talk about the corresponding element in the *dual lattice*.
+> But, that would be confusing, because we use $\cdot^c$ for set complement.
+> Let's use $a^*$.
+> And also, things like $\vee_*$ and $\wedge_*$ to refer to the *dual lattice operations*.
+> In this case, for example,
+>
+> \begin{equation}
+>   a^* \vee_* b^*
+>   =
+>   (a \wedge b)^*.
+> \end{equation}
+>
+> To make the notation easier to follow, lets agree that
+> if we are treating $a$ as an *open element*,
+> $a^*$ will be the same *element* treated as a *closed element*.
+> And the *closed elements* will always have a $\cdot^*$ that can be removed
+> to produce an *open element*.
+> We shall do this even with families of elements:
+> $\mathscr{F}$ is a family of *open elements*
+> and $\mathscr{C}^*$ is a family of *closed elements*.
+> The corresponding *closed* and *open* families are $\mathscr{F}^*$ and $\mathscr{C}$.
+>
+> When talking about a real topological space... using sets,
+> when $B$ is a closed set, we shall write
+> $B \sim a^*$ to mean that $B$ is the complement of the open set $a$.
 
 > **Disclaimer:**
 > I know almost nothing about *[categories][]*.
@@ -93,6 +111,16 @@ It is the biggest open set that does not intersect the original set:
   \bigvee \{A \in \tau :\, B \cap A = \emptyset\}.
 \end{equation}
 
+Or, using $\cdot^*$...
+
+\begin{equation}
+  \overline{B}
+  \sim
+  \left(\overline{B}^c\right)^*
+  =
+  {\bigwedge}_* \{A \in \tau :\, B \cap A = \emptyset\}^*.
+\end{equation}
+
 Since we are dealing with a *complete lattice*...
 we do not see sets... :see_no_evil:
 let's deal only with open *elements* (including $B$).
@@ -101,9 +129,9 @@ Look Mom, no sets:
 \begin{equation}
   \tag{🚴}
   \label{closure:no_sets}
-  \overline{B}^c
-  =
-  \bigvee \{A \in \tau :\, B \wedge A = 0\}.
+  \overline{B}
+  \sim
+  {\bigwedge}_* \{A \in \tau :\, B \wedge A = 0\}^*.
 \end{equation}
 
 
@@ -120,12 +148,12 @@ we cannot expect much by looking at
 \end{equation}
 
 The *join* (of any filter) just gives 1,
-while the *meet* frequently is $\emptyset$.
+while the *meet* frequently is $0$.
 In particular,
 $\bigwedge \mathscr{F}$ usually does not tell us much about a filter $\mathscr{F}$
 possibly corresponding or not to the *open neighbourhoods* of some point.
 
-If we make those sets just a little "*fuller-bodied*"... we get
+If we make those sets just a little "fuller-bodied"... we get
 
 \begin{equation}
   \tag{$\overline{\text{v}}$}
@@ -141,12 +169,12 @@ and it would give the same closed set.
 Dually, using "closure with no sets" $\eqref{closure:no_sets}$, we could do
 
 \begin{equation}
-  \overline{\{x\}}^c
-  =
+  \overline{\{x\}}
+  \subset
   \bigcup_{V \in \mathcal{V}(x)}
   \bigcup_{\substack{A \in \tau \\ A \cap V = \emptyset}} A
-  =
-  \bigvee \mathscr{C}_x,
+  \sim
+  {\bigwedge}_* \mathscr{C}_x^*,
 \end{equation}
 
 where
@@ -158,7 +186,7 @@ where
 \end{equation}
 
 Notice that $\mathscr{C}_x$ is not a filter.
-I mean... it is a filter in the *dual lattice*, using the order $\prec^c$.
+I mean... $\mathscr{C}_x^*$ is a filter in the *dual lattice*, using the reverse order.
 But in the original *open lattice*,
 the family $\mathscr{C}_x$ is the dual of a *filter*: an *[ideal][]*.
 That is,
@@ -168,23 +196,24 @@ That is,
 
 [ideal]: https://en.wikipedia.org/wiki/Ideal_(order_theory) "Ideals in a Lattice"
 
-In a sense, $\mathscr{C}_x$ is a family of sets a little bigger than those in $\tau(x)$:
+In a sense, $\mathscr{C}_x^*$ is a family of sets a little bigger than those in $\tau(x)$:
 we took the closure of sets.
 However, instead of working on the lattice of closed sets,
-we are using $\mathscr{C}_x$ because we want to stay on the *open lattice*.
+we are using $\mathscr{C}_x$ because we want to stay in the *open lattice*.
 Still... I'd like to think that $\mathscr{C}_x$ is a filter (in the dual order)
 a little "fuller-bodied" than $\tau(x)$:
 
 \begin{equation}
   \tag{💪}
   \label{fuller-bodied}
-  \bigwedge \tau(x)
+  \bigcap \tau(x)
   \subset
-  \left({\bigwedge}^c \mathscr{C}_x\right)^c.
+  \left(\bigcup \mathscr{C}_x\right)^c
+  \sim
+  {\bigwedge}_* \mathscr{C}_x^*
 \end{equation}
 
-By the way, remember that $\wedge^c$ is union.
-And that the right side above corresponds to the intersection of the closed sets.
+And that the right side above corresponds to the intersection of the closed neighbourhoods.
 
 
 Even Easier 🤹
@@ -200,9 +229,8 @@ We have $\mathscr{F}$:
   \{a \in L :\, \exists u \in \mathscr{F},\, u \wedge a = 0\}.
 \end{equation}
 
-This is an *ideal* that would correspond to the idea of taking
-the closure of every "neighbourhood" of $\mathscr{F}$.
-But there is an even "easier" filter:
+This is an *ideal* that corresponds to the idea of *closed neighbourhoods* of $\mathscr{F}$.
+But there is an even "easier" ideal:
 
 \begin{equation}
   \mathscr{F}^c
@@ -211,13 +239,13 @@ But there is an even "easier" filter:
 \end{equation}
 
 Notice that $\mathscr{C}_{\mathscr{F}} \subset \mathscr{F}^c$,
-because $\mathscr{F}$ is a filter.
+because $\mathscr{F}$ is a proper filter ($0 \not \in \mathscr{F}$).
 And just like in $\eqref{fuller-bodied}$,
-the ideal $\mathscr{F}^c$ can be considered as a filter made of *closed sets*.
+the ideal $\mathscr{F}^c$ can be considered as a filter ${\mathscr{F}^c}^*$ made of *closed sets*.
 
-If we were talking about the neighbourhoods of a point $x$,
-while $\mathscr{C}_{\mathscr{F}}$ correspond to the closed neighbourhoods of $x$,
-$\mathscr{F}^c$ correspond to the closed sets that contain $x$.
+If we start with $\mathscr{F}$ being open neighbourhoods of a point $x$,
+while $\mathscr{C}_{\mathscr{F}}^*$ correspond to the closed neighbourhoods of $x$,
+${\mathscr{F}^c}^*$ correspond to the closed sets that contain $x$.
 In terms of the "intersection" of closed "sets"
 --- if we were talking about sets ---
 we have:
@@ -226,23 +254,25 @@ we have:
   \tag{💪}
   \bigwedge \mathscr{F}
   &\subset
-  \left({\bigwedge}^c \mathscr{C}_{\mathscr{F}}\right)^c
+  \left({\bigwedge}_* \mathscr{C}_{\mathscr{F}}^*\right)^c
   \\
   \tag{💪💪}
-  \left({\bigwedge}^c \mathscr{F}^c\right)^c
-  &\prec
-  \left({\bigwedge}^c \mathscr{C}_{\mathscr{F}}\right)^c.
+  {\bigwedge}_* {\mathscr{F}^c}^*
+  &\prec_*
+  {\bigwedge}_* \mathscr{C}_{\mathscr{F}}^*.
 \end{align}
 
-But those are lots of ${}^c$...
-... and also, if we are not talking about sets, there is no inclusion ($\subset$)!
+But those are lots of ${}^*$...
+and also, if we are not talking about sets, there is no inclusion ($\subset$).
+And no *complement*!
 
 > **Remember:**
 > Those are not sets. They are just *elements* in a lattice.
-> And ${\cdot}^c$ is attached to an *element* just to remind us that we are
+> And ${\cdot}^*$ is attached to an *element* just to remind us that we are
 > reversing the order and treating the *elements* as *closed sets*, instead of *open*.
 
 So, getting rid of everything that depends on *sets*...
+and getting rid of all those ${\cdot}^*$...
 
 \begin{equation}
   \tag{💪💪}
@@ -251,10 +281,7 @@ So, getting rid of everything that depends on *sets*...
   \bigvee \mathscr{F}^c.
 \end{equation}
 
-The left side representing the intersection of every *closed neighbourhood* of the point,
-and the right side representing the intersection of every *closed set* that contains the point.
-
-
-> **Exercise:**
-> Why do I say "the closure of every 'neighbourhood' of $\mathscr{F}$"
-> instead of "the closure of every element in $\mathscr{F}$"?
+The left side representing the complement of the intersection
+of every *closed neighbourhood* of the point,
+and the right side representing complement of the intersection
+of every *closed set* that contains the point.
