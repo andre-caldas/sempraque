@@ -224,7 +224,7 @@ we have:
 
 \begin{align}
   \tag{💪}
-  \bigwedge \tau(x)
+  \bigwedge \mathscr{F}
   &\subset
   \left({\bigwedge}^c \mathscr{C}_{\mathscr{F}}\right)^c
   \\
@@ -238,7 +238,7 @@ But those are lots of ${}^c$...
 
 \begin{align}
   \tag{💪}
-  \bigwedge \tau(x)
+  \bigwedge \mathscr{F}
   &\subset
   \left({\bigwedge}^c \mathscr{C}_{\mathscr{F}}\right)^c
   \\
