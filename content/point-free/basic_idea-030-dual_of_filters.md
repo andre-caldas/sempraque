@@ -213,7 +213,7 @@ But there is an even "easier" filter:
 Notice that $\mathscr{C}_{\mathscr{F}} \subset \mathscr{F}^c$,
 because $\mathscr{F}$ is a filter.
 And just like in $\eqref{fuller-bodied}$,
-$\mathscr{F}^c$ can be considered as a filter made of *closed sets*.
+the ideal $\mathscr{F}^c$ can be considered as a filter made of *closed sets*.
 
 If we were talking about the neighbourhoods of a point $x$,
 while $\mathscr{C}_{\mathscr{F}}$ correspond to the closed neighbourhoods of $x$,
