@@ -205,3 +205,7 @@ in notes 1.5 the authors state:
 > We will often use it instead.
 
 I saw no good reason to define it differently. :white_check_mark:
+
+---
+Continues...
+[next post]({filename}basic_idea-030-dual_of_filters.md).
