@@ -230,7 +230,7 @@ we have:
   \\
   \tag{💪💪}
   \left({\bigwedge}^c \mathscr{F}^c\right)^c
-  &\succ
+  &\prec
   \left({\bigwedge}^c \mathscr{C}_{\mathscr{F}}\right)^c.
 \end{align}
 
