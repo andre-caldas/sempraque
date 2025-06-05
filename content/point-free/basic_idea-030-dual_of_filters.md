@@ -282,9 +282,9 @@ Or... using *closed elements*...
 
 \begin{equation}
   \tag{💪💪}
-  {\bigwedge}_* {\mathscr{C}_{\mathscr{F}}^*}
-  \prec
-  {\bigwedge}_* {\mathscr{F}^c}^*.
+  {\bigwedge}_* {\mathscr{F}^c}^*
+  \prec_*
+  {\bigwedge}_* {\mathscr{C}_{\mathscr{F}}^*}.
 \end{equation}
 
 The left side representing the intersection
