@@ -1,5 +1,5 @@
 ---
-title: Basic Idea: back to the points
+title: Basic Idea: back to the points 🌩️⛪️⚡️🚗
 date: 2025-05-26
 category: point-free topology
 tags: basic idea, lattice, filter
