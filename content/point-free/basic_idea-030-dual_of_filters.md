@@ -43,6 +43,10 @@ just notice that you can simply:
 But, if you like categories...
 you may just "invert the arrow directions". :triumph:
 
+> When you simply *invert the arrow directions*,
+> you get the **lattice structure** of the closed sets.
+> You do not get the *closed sets*.
+
 Up to now, we have just been juggling 🤹 stuff from one side to the other.
 And although I personally do not like treating a closed set
 simply as the complement of an open one...
@@ -80,6 +84,12 @@ But... what is the "complement" of an *element*, then? :shrug:
 > $\mathscr{F}$ is a family of *open elements*
 > and $\mathscr{C}^*$ is a family of *closed elements*.
 > The corresponding *closed* and *open* families are $\mathscr{F}^*$ and $\mathscr{C}$.
+>
+> The only exception shall be $0$ and $1$.
+> They are supposed to mean the smallest and biggest element for the given order.
+> So, abusing notation a little, $0^* = 1$,
+> since the smallest element in the *open lattice*
+> is the biggest element in the *closed lattice*.
 >
 > When talking about a real topological space... using sets,
 > when $B$ is a closed set, we shall write
@@ -186,15 +196,36 @@ where
 \end{equation}
 
 Notice that $\mathscr{C}_x$ is not a filter.
-I mean... $\mathscr{C}_x^*$ is a filter in the *dual lattice*, using the reverse order.
+I mean... $\mathscr{C}_x^*$ is a filter in the *dual lattice*, using the reverse order:
+
+\begin{gather}
+  p^*, q^* \in \mathscr{C}_x^*
+  \Rightarrow
+  p^* \wedge_* q^* \in \mathscr{C}_x^*
+  \\
+  a^* \in \tau^*,\; p^* \in \mathscr{C}_x^*
+  \Rightarrow
+  a^* \vee_* p^* \in \mathscr{C}_x^*,
+\end{gather}
+
+where the last impllication is the same as
+$p^* \prec a^* \Rightarrow a^* \in \mathscr{C}_x^*$.
+
+[ideal]: https://en.wikipedia.org/wiki/Ideal_(order_theory) "Ideals in a Lattice"
+
 But in the original *open lattice*,
 the family $\mathscr{C}_x$ is the dual of a *filter*: an *[ideal][]*.
 That is,
 
-1. $p, q \in \mathscr{C}_x$ $\Rightarrow$ $p \vee q \in \mathscr{C}_x$.
-2. $a \in \tau$ and $p \in \mathscr{C}_x$ $\Rightarrow$ $a \wedge p \in \mathscr{C}_x$.
-
-[ideal]: https://en.wikipedia.org/wiki/Ideal_(order_theory) "Ideals in a Lattice"
+\begin{gather}
+  p, q \in \mathscr{C}_x
+  \Rightarrow
+  p \vee q \in \mathscr{C}_x
+  \\
+  a \in \tau,\; p \in \mathscr{C}_x
+  \Rightarrow
+  a \wedge p \in \mathscr{C}_x.
+\end{gather}
 
 In a sense, $\mathscr{C}_x^*$ is a family of sets a little bigger than those in $\tau(x)$:
 we took the closure of sets.
@@ -230,7 +261,7 @@ We have $\mathscr{F}$:
 \end{equation}
 
 This is an *ideal* that corresponds to the idea of *closed neighbourhoods* of $\mathscr{F}$.
-But there is an even "easier" ideal:
+But there is an even "easier" family to work with:
 
 \begin{equation}
   \mathscr{F}^c
@@ -240,48 +271,32 @@ But there is an even "easier" ideal:
 
 Notice that $\mathscr{C}_{\mathscr{F}} \subset \mathscr{F}^c$,
 because $\mathscr{F}$ is a proper filter ($0 \not \in \mathscr{F}$).
-And just like in $\eqref{fuller-bodied}$,
-the ideal $\mathscr{F}^c$ can be considered as a filter ${\mathscr{F}^c}^*$ made of *closed sets*.
-
-If we start with $\mathscr{F}$ being open neighbourhoods of a point $x$,
-while $\mathscr{C}_{\mathscr{F}}^*$ correspond to the closed neighbourhoods of $x$,
-${\mathscr{F}^c}^*$ correspond to the closed sets that contain $x$.
-In terms of the "intersection" of closed "sets"
---- if we were talking about sets ---
-we have:
-
-\begin{align}
-  \tag{💪}
-  \bigwedge \mathscr{F}
-  &\subset
-  \left({\bigwedge}_* \mathscr{C}_{\mathscr{F}}^*\right)^c
-  \\
-  \tag{💪💪}
-  {\bigwedge}_* {\mathscr{F}^c}^*
-  &\prec_*
-  {\bigwedge}_* \mathscr{C}_{\mathscr{F}}^*.
-\end{align}
-
-But those are lots of ${}^*$...
-and also, if we are not talking about sets, there is no inclusion ($\subset$).
-And no *complement*!
-
-> **Remember:**
-> Those are not sets. They are just *elements* in a lattice.
-> And ${\cdot}^*$ is attached to an *element* just to remind us that we are
-> reversing the order and treating the *elements* as *closed sets*, instead of *open*.
-
-So, getting rid of everything that depends on *sets*...
-and getting rid of all those ${\cdot}^*$...
 
 \begin{equation}
-  \tag{💪💪}
   \bigvee \mathscr{C}_{\mathscr{F}}
   \prec
   \bigvee \mathscr{F}^c.
 \end{equation}
 
-The left side representing the complement of the intersection
+Or... using *closed elements*...
+
+\begin{equation}
+  \tag{💪💪}
+  {\bigwedge}_* {\mathscr{C}_{\mathscr{F}}^*}
+  \prec
+  {\bigwedge}_* {\mathscr{F}^c}^*.
+\end{equation}
+
+The left side representing the intersection
 of every *closed neighbourhood* of the point,
-and the right side representing complement of the intersection
+and the right side representing the intersection
 of every *closed set* that contains the point.
+
+
+### Not ideal, though :worried:
+
+So, $\mathscr{F}^c$ is a nice *family* of *elements* from our complete lattice...
+although, a family **not _ideal_**... :worried:.
+
+I mean... even if $\mathscr{F}$ is a proper filter,
+$\mathscr{F}^c$ might not be an *ideal*!!!
