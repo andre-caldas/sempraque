@@ -45,7 +45,7 @@ you may just "invert the arrow directions". :triumph:
 
 > When you simply *invert the arrow directions*,
 > you get the **lattice structure** of the closed sets.
-> You do not get the *closed sets*.
+> You do not get the *closed sets*, because you are not actually talking about sets!
 
 Up to now, we have just been juggling 🤹 stuff from one side to the other.
 And although I personally do not like treating a closed set
@@ -65,7 +65,7 @@ But... what is the "complement" of an *element*, then? :shrug:
 > For an element $a$ in the *complete lattice*,
 > we could even use the symbol $a^c$ to talk about the corresponding element in the *dual lattice*.
 > But, that would be confusing, because we use $\cdot^c$ for set complement.
-> Let's use $a^*$.
+> Let's use $a^*$ for the element $a$ regarded as an element in the dual lattice.
 > And also, things like $\vee_*$ and $\wedge_*$ to refer to the *dual lattice operations*.
 > In this case, for example,
 >
@@ -93,7 +93,7 @@ But... what is the "complement" of an *element*, then? :shrug:
 >
 > When talking about a real topological space... using sets,
 > when $B$ is a closed set, we shall write
-> $B \sim a^*$ to mean that $B$ is the complement of the open set $a$.
+> $B \sim a^*$ to mean that $B$ is the complement of the open set the element $a$ represents.
 
 > **Disclaimer:**
 > I know almost nothing about *[categories][]*.
@@ -300,3 +300,73 @@ although, a family **not _ideal_**... :worried:.
 
 I mean... even if $\mathscr{F}$ is a proper filter,
 $\mathscr{F}^c$ might not be an *ideal*!!!
+
+Well... $\mathscr{F}^c$ is a **wannabe** ideal.
+But let me tell you...
+
+> If it was an *ideal*, it would be **prime**!
+>
+> \begin{align}
+>   A \wedge B \in \mathscr{F}^c
+>   &\Leftrightarrow A \wedge B \not \in \mathscr{F}
+>   \\
+>   &\Rightarrow
+>   A \not \in \mathscr{F}
+>   \text{ or }
+>   B \not \in \mathscr{F}
+>   \quad\text{(since $\mathscr{F}$ is closed by $\wedge$)}
+>   \\
+>   &\Leftrightarrow
+>   A \in \mathscr{F}^c
+>   \text{ or }
+>   B \in \mathscr{F}^c
+> \end{align}
+
+And, hey! Cheer up!!
+Not being an ideal is not a bad thing!
+It turns out that when the lattice we are working with
+is the topology $\tau$ of a topological space $X$,
+and the filter is the *open neighbourhood filter* $\tau(x)$ for some point $x$,
+the family $\tau(x)^c$ is indeed an *ideal*!!!
+:tada: :confetti_ball: 🥳
+
+In fact, notice that $\tau(x)$ is a *prime filter*:
+
+\begin{gather}
+  A \cup B \in \tau(x)
+  \Rightarrow
+  A \in \tau(x)
+  \text{ or }
+  B \in \tau(x)
+  \\\text{equivalently}\\
+  A, B \not \in \tau(x)
+  \Rightarrow
+  A \cup B \not \in \tau(x).
+\end{gather}
+
+
+And, if $\mathscr{F}$ is a *prime filter*, $\mathscr{F}^c$ is an *ideal*.
+The main argument being:
+
+\begin{align}
+  A, B \in \mathscr{F}^c
+  &\Leftrightarrow
+  A, B \not \in \mathscr{F}
+  \\
+  &\Rightarrow
+  A \vee B \not \in \mathscr{F}
+  \\
+  &\Leftrightarrow
+  A \vee B \in \mathscr{F}^c.
+\end{align}
+
+
+Change Log
+----------
+
+**2025-06-06:**
+I have just realized that for a *filter* $\mathscr{F}$,
+its complement, $\mathscr{F}^c$ **might not be an *ideal***.
+So, I have fixed the post.
+Now, I understand much better the relation between those *filters* and those *ideals*
+in a *lattice*.
