@@ -112,7 +112,7 @@ In fact, if $\mathscr{C} \subset \mathscr{F}^c$, since $\mathscr{F}^c$ is an *id
 If we look at ${\mathscr{F}^c}^*$, instead, we have just the same, but dual:
 
 > The filter $\mathscr{F}$ is *completely prime* if, and only if,
-> ${\mathscr{F}^c}^*$ is a *prime filter* with maximum element:
+> ${\mathscr{F}^c}^*$ is a *prime filter* with minimum element:
 >
 > \begin{equation}
 >   {\bigwedge}_* {\mathscr{F}^c}^* \in {\mathscr{F}^c}^*.
