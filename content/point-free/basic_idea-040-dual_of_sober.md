@@ -2,8 +2,8 @@
 title: Basic Idea: dual of being sober 🍻
 date: 2025-06-10
 category: point-free topology
-tags: basic idea, filter, sober
-summary: An alternative definition for the concept of "sober".
+tags: basic idea, filter, sober, prime, ideal, dual
+summary: Alternative definitions for the concept of "sober".
 ---
 
 In a
@@ -36,7 +36,7 @@ Also, $L$ is a *complete lattice*.
 
 
 Filter, to *wannabe* prime ideal, to *wannabe* prime filter
--------------------------------------------------------
+-----------------------------------------------------------
 
 In my [last post][closed],
 we have seen that complements take a filter $\mathscr{F}$
