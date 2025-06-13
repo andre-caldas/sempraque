@@ -7,4 +7,5 @@ MY_DIR="$(dirname "$0")"
 
 # Current "elegant" theme does not require fonts.
 #"$MY_DIR/install_fonts.sh"
-pelican content --verbose -s publishconf.py
+pelican content -s publishconf.py
+cp google*.html output/

@@ -12,6 +12,7 @@ THEME = "themes/elegant"
 THEME_TEMPLATES_OVERRIDES = [f"templates/{THEME}", "templates/",]
 PATH = "content"
 STATIC_PATHS = [""]
+
 TIMEZONE = 'America/Sao_Paulo'
 DEFAULT_LANG = 'en'
 
