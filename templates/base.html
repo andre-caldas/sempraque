@@ -1,13 +1,13 @@
 {% extends "!theme/base.html" %}
 
-{% block head %}
+{% block head_links %}
   {{ super() }}
   {% include "parts/mathjax.html" %}
   {% include "parts/favicon.html" %}
-{% endblock %}
-
-{% block meta_tags_in_head %}
-  {{ super() }}
-  {% include "parts/mathjax.html" %}
-  {% include "parts/favicon.html" %}
+  <style>
+    /* Temporary hack, while I don't get pelican-search working */
+    .navbar-search {
+      display: none;
+    }
+  </style>
 {% endblock %}

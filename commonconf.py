@@ -2,8 +2,13 @@ AUTHOR = 'André Caldas'
 SITENAME = 'Sem Pra Quê'
 SITEURL = "" # Ovewritten by publishconf.py
 
-THEME = "themes/pelican-themes/Peli-Kiera"
+THEME = "themes/pelican-themes/elegant"
+#THEME = "themes/pelican-themes/Peli-Kiera"
 #THEME = "themes/pelican-themes/cebong"
+
+# Variables for "elegant" theme.
+#DIRECT_TEMPLATES = ["index", "tags", "categories", "archives", "search", "404"]
+
 THEME_TEMPLATES_OVERRIDES = [f"templates/{THEME}", "templates/",]
 PATH = "content"
 STATIC_PATHS = [""]
