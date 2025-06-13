@@ -2,7 +2,7 @@ AUTHOR = 'André Caldas'
 SITENAME = 'Sem Pra Quê'
 SITEURL = "" # Ovewritten by publishconf.py
 
-THEME = "themes/pelican-themes/elegant"
+THEME = "themes/elegant"
 #THEME = "themes/pelican-themes/Peli-Kiera"
 #THEME = "themes/pelican-themes/cebong"
 
