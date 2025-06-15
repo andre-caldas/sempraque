@@ -370,3 +370,8 @@ its complement, $\mathscr{F}^c$ **might not be an *ideal***.
 So, I have fixed the post.
 Now, I understand much better the relation between those *filters* and those *ideals*
 in a *lattice*.
+
+
+---
+Continues...
+[next post]({filename}basic_idea-040-dual_of_sober.md).

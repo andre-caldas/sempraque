@@ -278,6 +278,20 @@ Then, *sober* $\eqref{sober:open_filter}$ is:
 > then, $F = \overline{\{x\}}$ for some $x \in X$.
 
 
+### Better naming convention
+
+It seems that for those open sets above,
+people do not call them *prime*.
+They are called *meet-irreducible*.
+And for what I have called *$*$-prime*,
+people use *join-irreducible*.
+
+I really find this "correct" way much better than mine!
+It does not privilege *one* over *the other*.
+It does not favour *open* over *closed*.
+It is not *filter centred*, nor *ideal centred*.
+
+
 Conclusion
 ----------
 
@@ -290,3 +304,11 @@ Conclusion
 > </div>
 
 **PS:** I do not drink any alcohol, myself.
+
+
+Change Log
+----------
+
+**2025-06-15:**
+I have just realized that *meet-irreducible* and *join-irreducible* are much better naming.
+
